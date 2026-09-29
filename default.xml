@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<manifest>
+
+    <!-- GitHub server -->
+    <remote
+        name="github"
+        fetch="ssh://git@github.com/keerthanshetty-source/"
+        review="https://github.com/keerthanshetty-source/" />
+
+    <!-- Default settings for all projects -->
+    <default
+        remote="github"
+        revision="main"
+        sync-j="4"
+        sync-c="true" />
+
+    <!-- Application -->
+    <project
+        name="repo1"
+        path="app"
+        revision="main"
+        groups="driver" />
+
+    <!-- Driver -->
+    <project
+        name="bookmyshow"
+        path="drivers/kernel"
+        revision="main"
+        groups="driver" />
+
+    <!-- Common library -->
+    <project
+        name="camoufloge"
+        path="libs/common"
+        revision="main"
+        groups="screen" />
+
+
+</manifest>
